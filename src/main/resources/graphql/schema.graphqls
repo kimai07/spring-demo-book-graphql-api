@@ -1,0 +1,18 @@
+type Query {
+    getAuthorById(id: ID!): Author
+}
+
+type Author {
+    id: ID!
+    name: String!
+}
+
+type Mutation {
+    registerAuthor(name: String!): RegisterAuthorResponse
+}
+
+type RegisterAuthorResponse {
+    name: String!,
+    registered: Boolean!,
+    errorMessage: String
+}

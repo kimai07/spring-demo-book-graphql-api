@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS `authors` (
+  id IDENTITY NOT NULL PRIMARY KEY,
+  `name` varchar(32) NOT NULL
+);
